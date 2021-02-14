@@ -20,8 +20,8 @@ steps:
       - export HOME=/drone
       - apt update && apt-get install -y build-essential bc python curl git zip ftp gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi libssl-dev lftp zstd wget libfl-dev clang flex bison cpio
       - git clone https://github.com/Laulan56/build-scripts/ /drone/build-tools/build-scripts --branch b1c1 --depth 1
-      - git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 -b android-11.0.0_r0.53 /drone/aarch64-linux-android-4.9/ --depth=1
-      - git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 -b android-11.0.0_r0.53 /drone/arm-linux-androideabi-4.9/ --depth=1
+      - git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 -b android-11.0.0_r31 /drone/aarch64-linux-android-4.9/ --depth=1
+      - git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 -b android-11.0.0_r31 /drone/arm-linux-androideabi-4.9/ --depth=1
       - git clone https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86 /drone/linux-x86/ --depth=1
       - chmod +x /drone/build-tools/build-scripts/setup.sh
       - chmod +x /drone/build-tools/build-scripts/build.sh
